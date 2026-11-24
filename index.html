@@ -4,87 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>บ้านสวนเกษตร ขอนแก่น - ซื้อขายที่ดินเกษตร</title>
+    <title>ค้นหาที่ดิน - Land Search</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
+
+    <!-- Header Section -->
+    <header class="main-header">
         <div class="container">
-            <h1>บ้านสวนเกษตร ขอนแก่น</h1>
-            <p>แหล่งรวมที่ดินเกษตรคุณภาพดี เพื่อชีวิตที่ยั่งยืน</p>
-            <div class="search-form-container">
-                <h2>ค้นหาที่ดินที่คุณต้องการ</h2>
-                <form class="quick-search-form">
-                    <div class="form-group">
-                        <label for="province">จังหวัด:</label>
-                        <select id="province" name="province">
-                            <option value="">เลือกจังหวัด</option>
-                            <option value="ขอนแก่น">ขอนแก่น</option>
-                            <option value="อุดรธานี">อุดรธานี</option>
-                            <option value="นครราชสีมา">นครราชสีมา</option>
-                            <!-- เพิ่มจังหวัดอื่นๆ ตามต้องการ -->
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="price">ราคา (บาท):</label>
-                        <input type="number" id="price" name="price" placeholder="สูงสุดไม่เกิน">
-                    </div>
-                    <div class="form-group">
-                        <label for="area">ขนาด (ไร่):</label>
-                        <input type="number" id="area" name="area" placeholder="ตั้งแต่">
-                    </div>
-                    <button type="submit" class="btn btn-primary">ค้นหา</button>
-                </form>
+            <div class="logo">
+                <a href="/">LandSearch</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">หน้าแรก</a></li>
+                    <li><a href="#">ประกาศขายที่ดิน</a></li>
+                    <li><a href="#">บทความ</a></li>
+                    <li><a href="#">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-login">เข้าสู่ระบบ</a>
+                <a href="#" class="btn btn-register">ลงทะเบียน</a>
             </div>
         </div>
     </header>
 
-    <main class="container">
-        <section class="featured-listings">
-            <h2>ที่ดินแนะนำสำหรับคุณ</h2>
-            <div class="listing-cards">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200?text=ที่ดินเกษตร1" alt="ที่ดินเกษตร 1">
-                    <h3>ที่ดินสวนผลไม้ 15 ไร่</h3>
-                    <p>อ.ภูเวียง จ.ขอนแก่น</p>
-                    <p class="price">ราคา: 2,500,000 บาท</p>
-                    <p class="area">ขนาด: 15 ไร่</p>
+    <!-- Land Search Section -->
+    <section class="hero-search">
+        <div class="container">
+            <h1>ค้นหาที่ดินที่ใช่สำหรับคุณ</h1>
+            <form class="search-form">
+                <input type="text" placeholder="ค้นหาจากจังหวัด, อำเภอ, หรือรหัสไปรษณีย์...">
+                <select>
+                    <option value="">ประเภทที่ดิน</option>
+                    <option value="ที่ดินเปล่า">ที่ดินเปล่า</option>
+                    <option value="ที่ดินพร้อมสิ่งปลูกสร้าง">ที่ดินพร้อมสิ่งปลูกสร้าง</option>
+                </select>
+                <select>
+                    <option value="">ราคา</option>
+                    <option value="0-1M">ต่ำกว่า 1 ล้าน</option>
+                    <option value="1M-5M">1 - 5 ล้าน</option>
+                    <option value="5M+">มากกว่า 5 ล้าน</option>
+                </select>
+                <button type="submit" class="btn btn-primary">ค้นหา</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Featured Lands Section -->
+    <section class="featured-lands">
+        <div class="container">
+            <h2>ที่ดินแนะนำ</h2>
+            <div class="land-grid">
+                <!-- Example Land Card 1 -->
+                <div class="land-card">
+                    <img src="https://via.placeholder.com/300x200?text=Land+Image+1" alt="ที่ดิน 1">
+                    <h3>ที่ดินสวยใกล้เมือง</h3>
+                    <p>จังหวัด: กรุงเทพมหานคร</p>
+                    <p>ราคา: 5,000,000 บาท</p>
                     <a href="#" class="btn btn-secondary">ดูรายละเอียด</a>
                 </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200?text=ที่ดินเกษตร2" alt="ที่ดินเกษตร 2">
-                    <h3>ที่นาสวย 20 ไร่ ติดคลองชลประทาน</h3>
-                    <p>อ.น้ำพอง จ.ขอนแก่น</p>
-                    <p class="price">ราคา: 3,200,000 บาท</p>
-                    <p class="area">ขนาด: 20 ไร่</p>
+                <!-- Example Land Card 2 -->
+                <div class="land-card">
+                    <img src="https://via.placeholder.com/300x200?text=Land+Image+2" alt="ที่ดิน 2">
+                    <h3>ที่ดินทำเกษตร</h3>
+                    <p>จังหวัด: เชียงใหม่</p>
+                    <p>ราคา: 2,500,000 บาท</p>
                     <a href="#" class="btn btn-secondary">ดูรายละเอียด</a>
                 </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200?text=ที่ดินเกษตร3" alt="ที่ดินเกษตร 3">
-                    <h3>ที่ดินเปล่าเหมาะทำโคกหนองนา 10 ไร่</h3>
-                    <p>อ.บ้านฝาง จ.ขอนแก่น</p>
-                    <p class="price">ราคา: 1,800,000 บาท</p>
-                    <p class="area">ขนาด: 10 ไร่</p>
+                <!-- Example Land Card 3 -->
+                <img src="https://via.placeholder.com/300x200?text=Land+Image+3" alt="ที่ดิน 3">
+                    <h3>ที่ดินติดทะเล</h3>
+                    <p>จังหวัด: ภูเก็ต</p>
+                    <p>ราคา: 12,000,000 บาท</p>
                     <a href="#" class="btn btn-secondary">ดูรายละเอียด</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="sell-land-cta">
-            <h2>ต้องการประกาศขายที่ดินของคุณ?</h2>
-            <p>ลงประกาศฟรี! เข้าถึงผู้ซื้อที่สนใจที่ดินเกษตรทั่วประเทศ</p>
-            <a href="#" class="btn btn-primary btn-large">ลงประกาศขายที่ดิน</a>
-        </section>
-    </main>
-
-    <footer>
+    <!-- Sell Land Button Section -->
+    <section class="sell-land-cta">
         <div class="container">
-            <p>&copy; 2023 บ้านสวนเกษตร ขอนแก่น. สงวนลิขสิทธิ์.</p>
+            <h2>ต้องการขายที่ดินของคุณ?</h2>
+            <p>ลงประกาศขายที่ดินกับเราได้ง่ายๆ และรวดเร็ว</p>
+            <a href="#" class="btn btn-primary">ลงประกาศขายที่ดิน</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>เกี่ยวกับเรา</h4>
+                    <ul>
+                        <li><a href="#">บริษัท</a></li>
+                        <li><a href="#">ทีมงาน</a></li>
+                        <li><a href="#">อาชีพ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>บริการ</h4>
+                    <ul>
+                        <li><a href="#">ลงประกาศขาย</a></li>
+                        <li><a href="#">ค้นหาที่ดิน</a></li>
+                        <li><a href="#">ปรึกษา</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>ช่วยเหลือ</h4>
+                    <ul>
+                        <li><a href="#">คำถามที่พบบ่อย</a></li>
+                        <li><a href="#">นโยบายความเป็นส่วนตัว</a></li>
+                        <li><a href="#">ข้อกำหนดและเงื่อนไข</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>ติดต่อเรา</h4>
+                    <p>123 ถนนสุขุมวิท, กรุงเทพฯ 10110</p>
+                    <p>โทร: 02-123-4567</p>
+                    <p>อีเมล: info@landsearch.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LandSearch. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
 ```
