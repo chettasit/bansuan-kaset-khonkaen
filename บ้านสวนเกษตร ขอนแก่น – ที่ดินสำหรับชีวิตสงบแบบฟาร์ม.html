@@ -1,0 +1,253 @@
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บ้านสวนเกษตร ขอนแก่น – ที่ดินสำหรับชีวิตสงบแบบฟาร์ม</title>
+    <meta name="description" content="ค้นพบชีวิตที่เรียบง่ายและยั่งยืนที่บ้านสวนเกษตร ขอนแก่น ที่ดินสำหรับสร้างฟาร์มในฝันของคุณ ท่ามกลางธรรมชาติอันเงียบสงบ">
+    <link rel="stylesheet" href="style.css"> <!-- สมมติว่ามีไฟล์ style.css อยู่แล้ว -->
+    <style>
+        /* Basic Styling for this page */
+        body {
+            font-family: 'Kanit', sans-serif; /* หรือฟอนต์อื่นที่เหมาะสม */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        header {
+            background: #28a745; /* สีเขียว */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        .hero {
+            background: url('images/farm-hero.jpg') no-repeat center center/cover; /* สมมติว่ามีรูปภาพ */
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h2 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            background: #ffc107; /* สีเหลือง */
+            color: #333;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #e0a800;
+        }
+        .section {
+            padding: 40px 0;
+            background: #fff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .section h3 {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #28a745;
+            margin-bottom: 30px;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+        .feature-item {
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+        .feature-item i {
+            font-size: 3rem;
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .contact-info {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 30px;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .section h3 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+    <!-- Font Awesome for icons (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>บ้านสวนเกษตร ขอนแก่น</h1>
+            <p>ที่ดินสำหรับชีวิตสงบแบบฟาร์ม</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>สร้างชีวิตในฝันของคุณที่ขอนแก่น</h2>
+            <p>ที่ดินแปลงสวย พร้อมสำหรับการทำเกษตรอินทรีย์และพักผ่อน</p>
+            <a href="#contact" class="btn">ติดต่อสอบถาม</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="section about-us">
+            <h3>เกี่ยวกับโครงการ</h3>
+            <p>บ้านสวนเกษตร ขอนแก่น คือโครงการจัดสรรที่ดินเพื่อการเกษตรและที่อยู่อาศัย ที่ออกแบบมาเพื่อผู้ที่ใฝ่ฝันถึงชีวิตที่เรียบง่าย ใกล้ชิดธรรมชาติ และพึ่งพาตนเองได้ เรามุ่งมั่นที่จะสร้างชุมชนที่ยั่งยืน ซึ่งสมาชิกสามารถปลูกพืชผัก เลี้ยงสัตว์ และใช้ชีวิตอย่างมีความสุขในบรรยากาศที่เงียบสงบของจังหวัดขอนแก่น</p>
+            <p>ที่ดินแต่ละแปลงได้รับการวางแผนอย่างพิถีพิถัน เพื่อให้มีพื้นที่เพียงพอสำหรับการทำเกษตรกรรมขนาดเล็กถึงขนาดกลาง พร้อมสิ่งอำนวยความสะดวกพื้นฐานที่จำเป็น</p>
+        </section>
+
+        <section class="section features">
+            <h3>จุดเด่นของโครงการ</h3>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-seedling"></i>
+                    <h4>ที่ดินพร้อมทำเกษตร</h4>
+                    <p>ดินดี น้ำดี เหมาะสำหรับการปลูกพืชผักผลไม้หลากหลายชนิด</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-home"></i>
+                    <h4>สร้างบ้านในฝัน</h4>
+                    <p>มีพื้นที่สำหรับสร้างบ้านพักตากอากาศ หรือบ้านอยู่อาศัยถาวร</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-tree"></i>
+                    <h4>ธรรมชาติอุดมสมบูรณ์</h4>
+                    <p>รายล้อมด้วยต้นไม้และบรรยากาศที่เงียบสงบ ห่างไกลความวุ่นวาย</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>ทำเลศักยภาพ</h4>
+                    <p>เดินทางสะดวก ใกล้แหล่งชุมชนและสิ่งอำนวยความสะดวกในขอนแก่น</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section gallery">
+            <h3>แกลเลอรีภาพ</h3>
+            <div class="gallery-grid">
+                <img src="images/gallery1.jpg" alt="แปลงที่ดินสวยงาม">
+                <img src="images/gallery2.jpg" alt="บรรยากาศธรรมชาติ">
+                <img src="images/gallery3.jpg" alt="การทำเกษตร">
+                <img src="images/gallery4.jpg" alt="บ้านสวน">
+                <img src="images/gallery5.jpg" alt="วิวทิวทัศน์">
+                <img src="images/gallery6.jpg" alt="พืชผักสวนครัว">
+            </div>
+        </section>
+
+        <section class="section location">
+            <h3>แผนที่และที่ตั้ง</h3>
+            <p style="text-align: center;">โครงการตั้งอยู่ในทำเลที่เดินทางสะดวกในจังหวัดขอนแก่น ใกล้กับ...</p>
+            <!-- Embed Google Map here -->
+            <div style="width: 100%; height: 400px; background-color: #e0e0e0; display: flex; justify-content: center; align-items: center; border-radius: 8px;">
+                <p>แผนที่ Google Maps จะถูกฝังที่นี่</p>
+                <!-- ตัวอย่าง: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.0000000000005!2d102.83333333333333!3d16.43333333333333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDI2JzAwLjAiTiAxMDLCsDUwJzAwLjAiRTA!5e0!3m2!1sen!2sth!4v1678901234567!5m2!1sen!2sth" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <h3>ติดต่อสอบถาม</h3>
+            <div class="contact-info">
+                <p><i class="fas fa-phone-alt"></i> โทร: 08x-xxx-xxxx</p>
+                <p><i class="fas fa-envelope"></i> อีเมล: info@baansuankhonkaen.com</p>
+                <p><i class="fab fa-line"></i> Line ID: @baansuankk</p>
+                <p>หรือกรอกแบบฟอร์มด้านล่างเพื่อสอบถามข้อมูลเพิ่มเติม</p>
+                <!-- Contact Form (can be added later with backend) -->
+                <form style="max-width: 500px; margin: 20px auto; padding: 20px; border: 1px solid #eee; border-radius: 8px; background: #f9f9f9;">
+                    <p><input type="text" placeholder="ชื่อ-นามสกุล" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;"></p>
+                    <p><input type="email" placeholder="อีเมล" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;"></p>
+                    <p><input type="tel" placeholder="เบอร์โทรศัพท์" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;"></p>
+                    <p><textarea placeholder="ข้อความสอบถาม" rows="5" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;"></textarea></p>
+                    <p><button type="submit" class="btn" style="width: 100%; background: #28a745; color: #fff;">ส่งข้อความ</button></p>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 บ้านสวนเกษตร ขอนแก่น. สงวนลิขสิทธิ์.</p>
+        </div>
+    </footer>
+</body>
+</html>
+```
