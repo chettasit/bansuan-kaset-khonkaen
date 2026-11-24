@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- สำคัญมากสำหรับ Responsive -->
+    <title>เว็บไซต์ของฉัน</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ยินดีต้อนรับสู่เว็บไซต์</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">หน้าแรก</a></li>
+                    <li><a href="#">เกี่ยวกับเรา</a></li>
+                    <li><a href="#">บริการ</a></li>
+                    <li><a href="#">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <h2>เมนูด้านข้าง</h2>
+                <ul>
+                    <li><a href="#">ลิงก์ 1</a></li>
+                    <li><a href="#">ลิงก์ 2</a></li>
+                    <li><a href="#">ลิงก์ 3</a></li>
+                </ul>
+                <img src="images/example-sidebar.jpg" alt="รูปภาพด้านข้าง">
+            </aside>
+            <main class="content">
+                <h2>เนื้อหาหลัก</h2>
+                <p>นี่คือเนื้อหาหลักของเว็บไซต์ ตัวอย่างข้อความเพื่อแสดงการจัดวาง</p>
+                <img src="images/example-main.jpg" alt="รูปภาพเนื้อหาหลัก">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </main>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 เว็บไซต์ของฉัน</p>
+        </footer>
+    </div>
+</body>
+</html>
