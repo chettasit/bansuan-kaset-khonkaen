@@ -4,87 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>บ้านสวนเกษตร ขอนแก่น - ซื้อขายที่ดินเกษตร</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    <title>หน้าแรกของฉัน</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+        h1 {
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <header class="hero">
-        <div class="container">
-            <h1>บ้านสวนเกษตร ขอนแก่น</h1>
-            <p>แหล่งรวมที่ดินเกษตรคุณภาพดี เพื่อชีวิตที่ยั่งยืน</p>
-            <div class="search-form-container">
-                <h2>ค้นหาที่ดินที่คุณต้องการ</h2>
-                <form class="quick-search-form">
-                    <div class="form-group">
-                        <label for="province">จังหวัด:</label>
-                        <select id="province" name="province">
-                            <option value="">เลือกจังหวัด</option>
-                            <option value="ขอนแก่น">ขอนแก่น</option>
-                            <option value="อุดรธานี">อุดรธานี</option>
-                            <option value="นครราชสีมา">นครราชสีมา</option>
-                            <!-- เพิ่มจังหวัดอื่นๆ ตามต้องการ -->
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="price">ราคา (บาท):</label>
-                        <input type="number" id="price" name="price" placeholder="สูงสุดไม่เกิน">
-                    </div>
-                    <div class="form-group">
-                        <label for="area">ขนาด (ไร่):</label>
-                        <input type="number" id="area" name="area" placeholder="ตั้งแต่">
-                    </div>
-                    <button type="submit" class="btn btn-primary">ค้นหา</button>
-                </form>
-            </div>
-        </div>
-    </header>
-
-    <main class="container">
-        <section class="featured-listings">
-            <h2>ที่ดินแนะนำสำหรับคุณ</h2>
-            <div class="listing-cards">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200?text=ที่ดินเกษตร1" alt="ที่ดินเกษตร 1">
-                    <h3>ที่ดินสวนผลไม้ 15 ไร่</h3>
-                    <p>อ.ภูเวียง จ.ขอนแก่น</p>
-                    <p class="price">ราคา: 2,500,000 บาท</p>
-                    <p class="area">ขนาด: 15 ไร่</p>
-                    <a href="#" class="btn btn-secondary">ดูรายละเอียด</a>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200?text=ที่ดินเกษตร2" alt="ที่ดินเกษตร 2">
-                    <h3>ที่นาสวย 20 ไร่ ติดคลองชลประทาน</h3>
-                    <p>อ.น้ำพอง จ.ขอนแก่น</p>
-                    <p class="price">ราคา: 3,200,000 บาท</p>
-                    <p class="area">ขนาด: 20 ไร่</p>
-                    <a href="#" class="btn btn-secondary">ดูรายละเอียด</a>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200?text=ที่ดินเกษตร3" alt="ที่ดินเกษตร 3">
-                    <h3>ที่ดินเปล่าเหมาะทำโคกหนองนา 10 ไร่</h3>
-                    <p>อ.บ้านฝาง จ.ขอนแก่น</p>
-                    <p class="price">ราคา: 1,800,000 บาท</p>
-                    <p class="area">ขนาด: 10 ไร่</p>
-                    <a href="#" class="btn btn-secondary">ดูรายละเอียด</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="sell-land-cta">
-            <h2>ต้องการประกาศขายที่ดินของคุณ?</h2>
-            <p>ลงประกาศฟรี! เข้าถึงผู้ซื้อที่สนใจที่ดินเกษตรทั่วประเทศ</p>
-            <a href="#" class="btn btn-primary btn-large">ลงประกาศขายที่ดิน</a>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 บ้านสวนเกษตร ขอนแก่น. สงวนลิขสิทธิ์.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <div class="container">
+        <h1>ยินดีต้อนรับสู่หน้าแรกของฉัน!</h1>
+        <p>นี่คือหน้าเว็บตัวอย่างที่สร้างขึ้นเพื่อแสดงผล HTML และ CSS เบื้องต้น</p>
+        <p>คุณสามารถแก้ไขเนื้อหาและสไตล์ได้ตามต้องการ</p>
+        <a href="#" class="button">เรียนรู้เพิ่มเติม</a>
+    </div>
 </body>
 </html>
 ```
